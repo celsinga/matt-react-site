@@ -1,5 +1,8 @@
 import React from 'react';
-import video3 from '../mp4/1.mp4'
+import video3 from '../mp4/1.mp4';
+import {
+  Link
+} from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -13,8 +16,8 @@ export default function Contact() {
       <div className="content">
         <h1>Matt Young</h1>
         <ul>
-          <h2>Home</h2>
-          <h2>Stream</h2>
+        <Link to="/"><h2>Home</h2></Link>
+        <Link to="/stream"><h2>Stream</h2></Link>
         </ul>
       </div>
     </body>
