@@ -7,10 +7,12 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import song from './MattSong.mp3'
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="App">
+    <audio src={song} autoplay="autoplay" loop="loop"></audio>
     <Router>
 
       <Switch>

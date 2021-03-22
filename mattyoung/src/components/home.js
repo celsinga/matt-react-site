@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className="content">
-        <a href="https://open.spotify.com/artist/0GquTEAPyRIacEm0gpCIkM?si=bMznpLCFRWCVPoVYV5Eymg" target="_blank" rel="noreferrer"><h1>Matt Young</h1></a>
+        <a href="https://open.spotify.com/album/699MjXfaoKLn0Ekds06Vpn?si=H0V8izUTRPima59M-GShiQ" target="_blank" rel="noreferrer"><h1>Matt Young</h1></a>
         <ul>
           <Link to="/stream"><h2>Stream</h2></Link>
           <Link to="/contact"><h2>Contact</h2></Link>

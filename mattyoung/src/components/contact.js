@@ -14,10 +14,10 @@ export default function Contact() {
       </div>
 
       <div className="content">
-        <h1>Matt Young</h1>
+        <Link to="/"><h1>Matt Young</h1></Link>
         <ul>
-        <Link to="/"><h2>Home</h2></Link>
-        <Link to="/stream"><h2>Stream</h2></Link>
+        <a href="mailto:mattyoung.mgmt@gmail.com" target="_blank" rel="noreferrer"><h2>Email</h2></a>
+        <a href="https://www.instagram.com/youngmattyoung/" target="_blank" rel="noreferrer"><h2>IG</h2></a>
         </ul>
       </div>
     </body>
