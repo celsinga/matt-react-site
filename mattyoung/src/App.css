@@ -57,6 +57,11 @@
   text-decoration: none;
 }
 
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+}
+
 iframe {
   border-radius: 20px;
 }
@@ -68,6 +73,7 @@ a {
 
 .apple {
   width: 8em;
+  margin-left: -40px;
 }
 
 /* .spotify {

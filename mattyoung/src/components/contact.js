@@ -3,6 +3,8 @@ import video3 from '../mp4/1.mp4';
 import {
   Link
 } from "react-router-dom";
+import EmailIcon from '@material-ui/icons/Email';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 export default function Contact() {
   return (
@@ -15,9 +17,9 @@ export default function Contact() {
 
       <div className="content">
         <Link to="/"><h1>Matt Young</h1></Link>
-        <ul>
-        <a href="mailto:mattyoung.mgmt@gmail.com" target="_blank" rel="noreferrer"><h2>Email</h2></a>
-        <a href="https://www.instagram.com/youngmattyoung/" target="_blank" rel="noreferrer"><h2>IG</h2></a>
+        <ul className="contact-icons">
+        <a href="mailto:mattyoung.mgmt@gmail.com" target="_blank" rel="noreferrer"><EmailIcon style={{fontSize:'3em'}} /></a>
+        <a href="https://www.instagram.com/youngmattyoung/" target="_blank" rel="noreferrer"><InstagramIcon style={{fontSize:'3em'}} /></a>
         </ul>
       </div>
     </body>
