@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import EmailIcon from '@material-ui/icons/Email';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import PauseIcon from '@material-ui/icons/Pause';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 export default function Contact() {
   return (
@@ -22,6 +24,10 @@ export default function Contact() {
         <a href="https://www.instagram.com/youngmattyoung/" target="_blank" rel="noreferrer"><InstagramIcon style={{fontSize:'3em'}} /></a>
         </ul>
       </div>
+
+      {/* <div className="music-player">
+        <button style={{backgroundColor: 'transparent', border: 'none', color: 'white', marginRight: '20px'}}> <PauseIcon style={{fontSize: '3em'}} /> </button>
+      </div> */}
     </body>
   )
 }

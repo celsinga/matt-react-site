@@ -76,6 +76,15 @@ a {
   margin-left: -40px;
 }
 
-/* .spotify {
-  width: 6.5em;
-} */
+.audio-player {
+  padding: 50px 20px;
+  position: relative;
+  left: 66%;
+}
+
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 240px;
+    margin-bottom: 30px;
+  }
+}
