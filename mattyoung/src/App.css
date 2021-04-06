@@ -78,8 +78,6 @@ h1:hover {
   color: #29c0e6;
 }
 
-
-
 .apple {
   width: 8em;
   margin-left: -40px;
@@ -87,13 +85,27 @@ h1:hover {
 
 .audio-player {
   padding: 50px 20px;
-  position: relative;
+  position: fixed;
   left: 66%;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
   iframe {
     width: 240px;
     margin-bottom: 30px;
+    padding-top: 60px;
+    border-radius: 20px;
   }
+  /* body {
+    display: flex;
+    flex-direction: column;
+  } */
+  .audio-player {
+    /* padding: 50px 20px; */
+    position: fixed;
+    top: 1%;
+    width: 90%;
+  }
+  
 }

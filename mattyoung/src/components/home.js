@@ -22,21 +22,6 @@ const srcSet = [
   // song4
 ];
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      [theme.breakpoints.down('sm')]: {
-        width: '100%',
-      },
-    },
-    mainSlider: {
-      color: 'black',
-      '& .MuiSlider-rail': {
-        color: 'black',
-      }
-    }
-  }
-})
 
 export default function Home() {
 
@@ -60,11 +45,10 @@ export default function Home() {
       <div className="audio-player">
         <ThemeProvider theme={muiTheme}>
           <AudioPlayer 
-          useStyles={useStyles}
           elevation={1}
           width="30%"
           variation="default"
-          spacing={2}
+          spacing={1}
           order="reverse"
           preload="auto"
           autoplay={true}
