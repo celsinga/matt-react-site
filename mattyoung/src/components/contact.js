@@ -5,8 +5,19 @@ import {
 } from "react-router-dom";
 import EmailIcon from '@material-ui/icons/Email';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import PauseIcon from '@material-ui/icons/Pause';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import song4 from '../Velvet.mp3';
+
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import AudioPlayer from 'material-ui-audio-player';
+
+const muiTheme = createMuiTheme({});
+
+const srcSet = [
+  // song1,
+  // song2,
+  // song3,
+  song4
+];
 
 export default function Contact() {
   return (
@@ -25,9 +36,19 @@ export default function Contact() {
         </ul>
       </div>
 
-      {/* <div className="music-player">
-        <button style={{backgroundColor: 'transparent', border: 'none', color: 'white', marginRight: '20px'}}> <PauseIcon style={{fontSize: '3em'}} /> </button>
-      </div> */}
+      <div className="audio-player">
+        <ThemeProvider theme={muiTheme}>
+          <AudioPlayer 
+          elevation={1}
+          width="30%"
+          variation="default"
+          spacing={2}
+          order="reverse"
+          preload="auto"
+          autoplay={true}
+          src={srcSet} />
+        </ThemeProvider>
+      </div>
     </body>
-  )
+  ) 
 }

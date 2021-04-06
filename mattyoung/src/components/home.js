@@ -3,15 +3,24 @@ import video from '../mp4/6.mp4';
 import {
   Link
 } from "react-router-dom";
-import PauseIcon from '@material-ui/icons/Pause';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import song from '../MattSong.mp3';
 import { makeStyles } from '@material-ui/core/styles';
+import song1 from '../MattSong.mp3';
+import song2 from '../Song2.mp3';
+import song3 from '../Song3.mp3';
+import song4 from '../Velvet.mp3';
+
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 import AudioPlayer from 'material-ui-audio-player';
 
 const muiTheme = createMuiTheme({});
+
+const srcSet = [
+  // song1,
+  song2,
+  // song3,
+  // song4
+];
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -49,18 +58,18 @@ export default function Home() {
       </div>
 
       <div className="audio-player">
-      <ThemeProvider theme={muiTheme}>
-        <AudioPlayer 
-        useStyles={useStyles}
-        elevation={1}
-        width="30%"
-        variation="default"
-        spacing={2}
-        order="standart"
-        preload="auto"
-        autoplay={true}
-        src={song} />
-      </ThemeProvider>
+        <ThemeProvider theme={muiTheme}>
+          <AudioPlayer 
+          useStyles={useStyles}
+          elevation={1}
+          width="30%"
+          variation="default"
+          spacing={2}
+          order="reverse"
+          preload="auto"
+          autoplay={true}
+          src={srcSet} />
+        </ThemeProvider>
       </div>
 
     </body>

@@ -71,6 +71,15 @@ a {
   color: white;
 }
 
+a:hover {
+  color: #d40d3b;
+}
+h1:hover {
+  color: #29c0e6;
+}
+
+
+
 .apple {
   width: 8em;
   margin-left: -40px;

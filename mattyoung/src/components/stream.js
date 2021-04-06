@@ -5,9 +5,20 @@ import {
 } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import PauseIcon from '@material-ui/icons/Pause';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import AppleIcon from '@material-ui/icons/Apple';
+import song3 from '../Song3.mp3';
+
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import AudioPlayer from 'material-ui-audio-player';
+
+const muiTheme = createMuiTheme({});
+
+const srcSet = [
+  // song1,
+  // song2,
+  song3
+  // song4
+];
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,15 +53,24 @@ export default function Stream() {
         <div className={classes.root}>
           <CircularProgress color="secondary" />
         </div>
-        {/* <ul>
-          <a href="https://open.spotify.com/artist/0GquTEAPyRIacEm0gpCIkM?si=bMznpLCFRWCVPoVYV5Eymg" target="_blank" rel="noreferrer"><img src="spotify.svg" alt="Spotify" class="spotify"/></a>
-        </ul> */}
         
       </div>
 
-      {/* <div className="music-player">
-        <button style={{backgroundColor: 'transparent', border: 'none', color: 'white', marginRight: '20px'}}> <PauseIcon style={{fontSize: '3em'}} /> </button>
-      </div> */}
+      <div className="audio-player">
+        <ThemeProvider theme={muiTheme}>
+          <AudioPlayer 
+          elevation={1}
+          width="30%"
+          variation="default"
+          spacing={2}
+          order="reverse"
+          preload="auto"
+          autoplay={true}
+          src={srcSet} />
+        </ThemeProvider>
+      </div>
+
+     
 
       
       
